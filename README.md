@@ -20,7 +20,7 @@
     - THEN I am again presented with current and future conditions for that city
 
 
-![alt text](./Assets/images/screenshot.PNG)
-
 https://github.com/zelada5574/weatherapphelp
 https://zelada5574.github.io/Let-s-schedule-date/ 
+
+![alt text](./Assets/images/screenshot.PNG)
