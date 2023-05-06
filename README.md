@@ -1,32 +1,25 @@
-Description
-A simple calendar application that allows a user to save events for each hour of the day. It runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+## Module 6 Challenge
 
-User Story
-- AS AN employee with a busy schedule
-- I WANT to add important events to a daily planner
-- SO THAT I can manage my time effectively
-Acceptance Criteria
-- GIVEN I am using a daily planner to create a schedule
-- WHEN I open the planner
-- THEN the current day is displayed at the top of the calendar
-- WHEN I scroll down
-- THEN I am presented with time blocks for standard business hours
-- WHEN I view the time blocks for that day
-- THEN each time block is color-coded to indicate whether it is in the past, present, or future
-- WHEN I click into a time block
-- THEN I can enter an event
-- WHEN I click the save button for that time block
-- THEN the text for that event is saved in local storage
-- WHEN I refresh the page
-- THEN the saved events persist
-Usage
-This workday calendar display work hours of the day 8AM - 5PM.
-On the top of the page, current day and date is diplayed.
-Each time block is color coded to indicate whether it occurs in the past(gray), present(red), or future(green).
-Each time block has an input field and save button where users can store their schedule.
-Once it saved, it will store in their local storage.
+# Description
+A sime weather application that takes an input of a city from the user and displays the current day weather patterns as well as the future forcast details. The application uses the Open Weather Map API to get the information eneded. The app also uses local storage that automatically loads up upon refresh so it can save your data.
 
-![alt text](./assets/images/Screenshot.PNG)
+# User Story
+AS A traveler
+I WANT to see the weather outlook for multiple cities
+SO THAT I can plan a trip accordingly
 
-https://github.com/zelada5574/Let-s-schedule-date
+# Acceptance Criteria
+GIVEN a weather dashboard with form inputs
+WHEN I search for a city
+THEN I am presented with current and future conditions for that city and that city is added to the search history
+WHEN I view current weather conditions for that city
+THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
+WHEN I view future weather conditions for that city
+THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+WHEN I click on a city in the search history
+THEN I am again presented with current and future conditions for that city
+
+![alt text](./Assets/images/Screenshot.PNG)
+
+https://github.com/zelada5574/weatherapphelp
 https://zelada5574.github.io/Let-s-schedule-date/ 

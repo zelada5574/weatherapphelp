@@ -64,11 +64,11 @@ function getCurrentW(requestUrl) {
       forcastEl.append(cityNameEl);
       forcastEl.append(iconEl);
       tempEl.setAttribute("style", "margin-left: 2%;");
-      tempEl.textContent = `Current Temperature: ${currentTempR} F`;
+      tempEl.textContent = `Current Temperature: ${currentTempR}F`;
       windEl.setAttribute("style", "margin-left: 2%;");
-      windEl.textContent = `Current Wind Speed: ${currentWind} MPH`;
+      windEl.textContent = `Current Wind Speed: ${currentWind}MPH`;
       humidityEl.setAttribute("style", "margin-left: 2%;");
-      humidityEl.textContent = `Current Humidity: ${humidityV} %`;
+      humidityEl.textContent = `Current Humidity: ${humidityV}%`;
       forcastEl.append(tempEl);
       forcastEl.append(windEl);
       forcastEl.append(humidityEl);
@@ -100,9 +100,9 @@ function getCurrentW(requestUrl) {
             let myDateArr = currentDate.split(" ");
             currentCardEl[0].children[0].children[0].innerText = myDateArr[0];
             currentCardEl[0].children[0].children[0].append(iconEl2);
-            currentCardEl[0].children[0].children[1].innerText = `Temp: ${currentTempR} °F\n`;
-            currentCardEl[0].children[0].children[1].innerText += `Wind: ${currentWind} MPH\n`;
-            currentCardEl[0].children[0].children[1].innerText += `Humidity: ${humidityV} %`;
+            currentCardEl[0].children[0].children[1].innerText = `Temp: ${currentTempR}°F\n`;
+            currentCardEl[0].children[0].children[1].innerText += `Wind: ${currentWind}MPH\n`;
+            currentCardEl[0].children[0].children[1].innerText += `Humidity: ${humidityV}%`;
           }
         });
     });
