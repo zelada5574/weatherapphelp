@@ -1,14 +1,14 @@
-## Module 6 Challenge
+# Module 6 Challenge
 
-# Description
+## Description
 A sime weather application that takes an input of a city from the user and displays the current day weather patterns as well as the future forcast details. The application uses the Open Weather Map API to get the information eneded. The app also uses local storage that automatically loads up upon refresh so it can save your data.
 
-# User Story
+## User Story
 AS A traveler
 I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 
-# Acceptance Criteria
+## Acceptance Criteria
 GIVEN a weather dashboard with form inputs
 WHEN I search for a city
 THEN I am presented with current and future conditions for that city and that city is added to the search history
@@ -19,7 +19,7 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
-![alt text](./Assets/images/Screenshot.PNG)
+![alt text](./Assets/images/screenshot.PNG)
 
 https://github.com/zelada5574/weatherapphelp
 https://zelada5574.github.io/Let-s-schedule-date/ 
