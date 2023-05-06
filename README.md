@@ -19,7 +19,10 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
-![alt text](./Assets/images/screenshot.PNG)
+![alt text][def]
 
 https://github.com/zelada5574/weatherapphelp
 https://zelada5574.github.io/Let-s-schedule-date/ 
+
+
+[def]: ./Assets/images/screenshot.PNG
