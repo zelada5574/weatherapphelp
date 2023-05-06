@@ -11,7 +11,7 @@ let tempEl = document.createElement("p");
 let windEl = document.createElement("p");
 let humidityEl = document.createElement("p");
 let cardEl = $(".card");
-let counter = 0;
+let count = 0;
 
 let appendCities = function () {
   for (const key in citiesList) {
@@ -34,11 +34,10 @@ function getCurrentW(requestUrl) {
       if (response.status === 404) {
         current = false;
         let keys = Object.keys(citiesList);
-        if (counter < 1) {
+        if (count < 1) {
           delete citiesList[keys[keys.length - 1]];
-          counter++;
+          count++;
         }
-        console.log(citiesList);
         localStorage.setItem("cities", JSON.stringify(citiesList));
       } else {
         return response.json();
@@ -60,16 +59,16 @@ function getCurrentW(requestUrl) {
       tempEl.innerHTML = "";
       iconEl.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
       iconEl.setAttribute("class", "d-inline");
-      cityNameEl.textContent = `Todays forecast for the city of   ${cityName}`;
+      cityNameEl.textContent = `Today's Forecast for ${cityName}`;
       cityNameEl.setAttribute("class", "d-inline");
       forcastEl.append(cityNameEl);
       forcastEl.append(iconEl);
       tempEl.setAttribute("style", "margin-left: 2%;");
-      tempEl.textContent = "Current Temperature: " + currentTempR + "F";
+      tempEl.textContent = `Current Temperature: ${currentTempR} F`;
       windEl.setAttribute("style", "margin-left: 2%;");
-      windEl.textContent = "Current Wind Speed: " + currentWind + "MPH";
+      windEl.textContent = `Current Wind Speed: ${currentWind} MPH`;
       humidityEl.setAttribute("style", "margin-left: 2%;");
-      humidityEl.textContent = "Current Humidity: " + humidityV + "%";
+      humidityEl.textContent = `Current Humidity: ${humidityV} %`;
       forcastEl.append(tempEl);
       forcastEl.append(windEl);
       forcastEl.append(humidityEl);
@@ -88,7 +87,6 @@ function getCurrentW(requestUrl) {
             if (myDateArr2[1] == "12:00:00") {
               list = i;
               i = data.list.length;
-              console.log(myDateArr2);
             }
           }
           for (let i = 1; i <= cardEl.length; i++) {
@@ -102,10 +100,9 @@ function getCurrentW(requestUrl) {
             let myDateArr = currentDate.split(" ");
             currentCardEl[0].children[0].children[0].innerText = myDateArr[0];
             currentCardEl[0].children[0].children[0].append(iconEl2);
-            currentCardEl[0].children[0].children[1].innerText = `Temp: ${currentTempR}°F\n`;
-            currentCardEl[0].children[0].children[1].innerText += `Wind: ${currentWind}mph\n`;
-            currentCardEl[0].children[0].children[1].innerText += `Humidity: ${humidityV}%`;
-            list = list + 8;
+            currentCardEl[0].children[0].children[1].innerText = `Temp: ${currentTempR} °F\n`;
+            currentCardEl[0].children[0].children[1].innerText += `Wind: ${currentWind} MPH\n`;
+            currentCardEl[0].children[0].children[1].innerText += `Humidity: ${humidityV} %`;
           }
         });
     });

@@ -1,6 +1,10 @@
-.bg-gradient {
-  background-image:-o-linear-gradient(to right)}
-
+.bg-primary {
+  background-image: linear-gradient(
+    to right,
+    rgb(15, 84, 173),
+    rgb(33, 5, 107)
+  );
+}
 div h1 {
   margin-left: 2%;
   margin-top: 3%;
