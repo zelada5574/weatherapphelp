@@ -1,61 +1,60 @@
-body{
-  margin-right: 25px;
+.bg-gradient {
+  background-image:-o-linear-gradient(to right)}
+
+div h1 {
+  margin-left: 2%;
+  margin-top: 3%;
+}
+hr {
+  margin-left: 2%;
+  background-color: rgb(4, 4, 52);
+  color: gray;
+  width: 65%;
+}
+#cityName {
+  border-radius: 10px;
+  margin-left: 2%;
+  width: 65%;
+}
+#searchButton {
+  background-color: rgb(33, 98, 182);
+  border-radius: 10px;
+  color: aliceblue;
+  justify-content: center;
+  margin-left: 2%;
+  margin-top: 2%;
+  width: 65%;
+}
+
+#placeholder {
   margin-left: 25px;
+  font-size: large;
 }
 
-.header{
-  background: linear-gradient(to right, #5976c7 0%, #200669 100%);
-  display: flex;
-  justify-content: center;
-  color: whitesmoke;
+.row {
+  margin-left: 2%;
 }
 
-#forcast {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-left: 150px;
-  margin-top: 5px;
+.text-black {
+  font-size: 150%;
 }
 
 .card {
-  margin-right: 20px;
+  margin-top: 50px;
+  margin-right: 3%;
+  margin-left: 3%;
+  background-color: rgb(180, 205, 252);
 }
 
-.prompt, .displaycity {
+.card-body {
+  padding: 10px;
   font-weight: bold;
 }
 
-.fiveday{
-  margin-left: 280px;
-  margin-top: 50px;
-}
-
-.displaycity::after {
-  content: "" url(./images/Sunny.png);
-}
-
-.top {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.navigation {
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  border: solid black;
-  border-radius: 15px;
-  margin-left: 25px;
-}
-
-.card {
-  color: white;
-  background-color: rgb(28, 13, 95);
-}
-
-.hide {
-  display:none;
+#forecast {
+  margin-top: 3%;
+  margin-right: 10%;
+  width: 95%;
+  height: 200px;
+  outline: 2px solid rgb(0, 0, 0);
 }
